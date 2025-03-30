@@ -2,8 +2,9 @@
 
 .page {
   color: var(--main-text-color);
-  font-family: "IBM Plex mono";
+  font-family: "IBM Plex mono", sans-serif;
   font-size: 18px;
+  background-color: var(--content-background-color);
   background-image: var(--background-image);
   background-position: center;
   background-size: cover;
@@ -130,7 +131,6 @@
   flex-direction: column;
   gap: var(--content-gap);
   padding-block: var(--content-padding);
-  background-color: var(--content-background-color);
 }
 
 .section {
@@ -234,8 +234,7 @@
     max-inline-size: 50%;
   }
 
-  .why-section,
-  .how-section {
+  .grid-section {
     grid-template-columns: max-content 2fr;
   }
 
