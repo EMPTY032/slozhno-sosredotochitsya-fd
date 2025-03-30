@@ -1,1 +1,1 @@
-ну есть он или нет, разница то какая?
+https://github.com/EMPTY032/slozhno-sosredotochitsya-fd
