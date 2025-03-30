@@ -1,23 +1,23 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-image: var(--background-image);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  color: var(--main-text-color);
   font-family: "IBM Plex mono";
   font-size: 18px;
-  color: var(--main-text-color);
+  background-image: var(--background-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
-  height: 100vh;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-items: center;
+  height: 100vh;
   padding: var(--main-gap);
-  /* min-block-size: 668px; */
+  min-block-size: 668px;
 }
 
 .decorated-zone {
@@ -82,11 +82,11 @@
 }
 
 .header__theme-menu-button {
-  text-transform: lowercase;
-  color: var(--button-color);
-  background-color: transparent;
   border: none;
   padding: 1.5px 13px;
+  color: var(--button-color);
+  text-transform: lowercase;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -126,11 +126,11 @@
 }
 
 .content {
-  background-color: var(--content-background-color);
-  padding-block: var(--content-padding);
   display: flex;
   flex-direction: column;
   gap: var(--content-gap);
+  padding-block: var(--content-padding);
+  background-color: var(--content-background-color);
 }
 
 .section {
@@ -142,8 +142,8 @@
 
 .section__title {
   color: var(--title-text-color);
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .text-block {
@@ -189,9 +189,10 @@
 }
 
 .picture {
+  object-fit: cover;
+  object-position: center;
   inline-size: 100%;
   block-size: 100%;
-  object-fit: cover;
 }
 
 .picture-block {
@@ -207,14 +208,15 @@
   padding: var(--main-gap);
   color: var(--h1-text-color);
   text-shadow: 4px 4px 0 var(--accent-color);
+  min-block-size: 668px;
 }
 
 .footer__header {
   color: var(--header-text-color);
-  text-shadow: 2px 2px 0px var(--accent-color);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
+  text-shadow: 2px 2px 0px var(--accent-color);
 }
 
 @media (width >= 768px) {
