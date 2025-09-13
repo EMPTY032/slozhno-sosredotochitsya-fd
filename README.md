@@ -1,1 +1,3 @@
-https://github.com/EMPTY032/slozhno-sosredotochitsya-fd
+# Сайт о сложночти сосредоточиться на чем либо
+## Явлется адатипвным
+https://empty032.github.io/slozhno-sosredotochitsya-fd/
